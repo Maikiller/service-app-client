@@ -6,7 +6,7 @@ import {environment} from '../environments/environment'
 @Injectable({
   providedIn: 'root'
 })
-export class ClientesService {
+export class ClientesService  {
   apiUrl:String = environment.apiUrl + '/api/clientes';
   constructor(private http: HttpClient) { //setando informando para o API IP e PORTA
   }
