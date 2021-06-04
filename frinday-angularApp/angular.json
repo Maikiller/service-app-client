@@ -75,13 +75,15 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+              "port": 8080,
               "ssl": true,
               "sslCert": "ssl/server.crt",
               "sslKey": "ssl/server.key",
               "browserTarget": "frinday-angularApp:build:production"
             },
             "development": {
-              "ssl": true,
+              "port": 8080,
+              "ssl": false,
               "sslCert": "ssl/server.crt",
               "sslKey": "ssl/server.key",
               "browserTarget": "frinday-angularApp:build:development"
